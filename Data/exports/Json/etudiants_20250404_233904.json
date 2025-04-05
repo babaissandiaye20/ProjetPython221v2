@@ -1,0 +1,65 @@
+[
+    {
+        "nom": "Ndiaye",
+        "prenom": "Baba Issa",
+        "telephone": "786360662",
+        "email": "babaissandiaye242@gmail.com",
+        "classe": "GL",
+        "moyenne": 12.0,
+        "notes": {
+            "Math": 20.0,
+            "SVT": 13.0,
+            "Fr": 3.0
+        }
+    },
+    {
+        "nom": "Ndiaye",
+        "prenom": "Diop",
+        "telephone": "776559301",
+        "email": "babaissandiaye31@gmail.com",
+        "classe": "GL",
+        "moyenne": 12.0,
+        "notes": {
+            "Math": 12.0,
+            "Fr": 12.0
+        }
+    },
+    {
+        "nom": "Ndiaye",
+        "prenom": "Fai",
+        "telephone": "67",
+        "email": "sd@gmail.com",
+        "classe": "GL",
+        "moyenne": 12.0,
+        "notes": {
+            "Math": 12.0,
+            "SVT": 12.0
+        }
+    },
+    {
+        "nom": "A",
+        "prenom": "A",
+        "telephone": "7863595234",
+        "email": "qs@æmail.com",
+        "classe": "GL",
+        "moyenne": 9.67,
+        "notes": {
+            "Math": 12.0,
+            "Fr": 15.0,
+            "SVT": 2.0
+        }
+    },
+    {
+        "nom": "SASHA",
+        "prenom": "SLOW",
+        "telephone": "781777777",
+        "email": "S@gmail.com",
+        "classe": "REF DIG",
+        "moyenne": 6.33,
+        "notes": {
+            "BENTO": 3.0,
+            "DRAW": 12.0,
+            "eps": 4.0
+        }
+    }
+]
