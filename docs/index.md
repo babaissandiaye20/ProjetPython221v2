@@ -1,17 +1,16 @@
-# Welcome to MkDocs
+# Welcome to ProjetPython221v2
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-# Read ME
-## ProjetPython221v2
-### Installer les dépendances
-pip install -r requirements.txt
-
+# A faire avant de lancer le projet
+## Installer les dépendances suivant
+### les dependances 
+### pip install -r requirements.txt
 ### Lancer la doc en local
-mkdocs serve
+### mkdocs serve
 Pour regarder la documentation du projet
 
 ### Générer la version HTML statique
-mkdocs build
+#### mkdocs build
 Pour regarder la documentation du projet html statique
 
  
