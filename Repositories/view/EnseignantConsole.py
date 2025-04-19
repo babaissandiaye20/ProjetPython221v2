@@ -1,4 +1,4 @@
-from view.ConsoleManager import ConsoleManager
+from Repositories.view.ConsoleManager import ConsoleManager
 from Repositories.UtilisateurRepository import UtilisateurRepository
 from Repositories.EtudiantRepository import EtudiantRepository
 from Repositories.ClasseRepository import ClasseRepository

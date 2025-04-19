@@ -1,11 +1,11 @@
 # view/AuthConsole.py
 
-from view.ConsoleManager import ConsoleManager
+from Repositories.view.ConsoleManager import ConsoleManager
 from Repositories.UtilisateurRepository import UtilisateurRepository
 from Models.Utilisateur import Utilisateur
-from view.AdminConsole import AdminConsole
-from view.EnseignantConsole import EnseignantConsole
-from view.EtudiantConsole import EtudiantConsole
+from Repositories.view.AdminConsole import AdminConsole
+from Repositories.view.EnseignantConsole import EnseignantConsole
+from Repositories.view.EtudiantConsole import EtudiantConsole
 
 
 class AuthConsole:

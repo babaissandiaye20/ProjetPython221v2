@@ -1,13 +1,11 @@
 from reportlab.lib.pagesizes import A4
 from reportlab.pdfgen import canvas
 
-from view.ConsoleManager import ConsoleManager
+from Repositories.view.ConsoleManager import ConsoleManager
 from Repositories.UtilisateurRepository import UtilisateurRepository
 from Repositories.EtudiantRepository import EtudiantRepository
 from Repositories.ClasseRepository import ClasseRepository
-from Models.Utilisateur import Utilisateur
 from Models.Etudiant import Etudiant
-from Models.Classe import Classe
 import csv
 import json
 from datetime import datetime
@@ -358,9 +356,6 @@ class AdminConsole:
         with open(nom_fichier, mode='w', encoding='utf-8') as file:
             json.dump(moyennes, file, indent=4, ensure_ascii=False)
         ConsoleManager.print_message(f"✅ Moyennes exportées dans {nom_fichier}")
-
-    from reportlab.lib.pagesizes import A4
-    from reportlab.pdfgen import canvas
 
     def exporter_etudiants_pdf(self):
         etudiants = self.etudiant_repo.lister_tous()

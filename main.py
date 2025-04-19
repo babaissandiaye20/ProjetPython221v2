@@ -1,8 +1,7 @@
 # main.py
 
-import os
 import sys
-from view.AuthConsole import AuthConsole
+from Repositories.view import AuthConsole
 from Database.mongodb import MongoDB
 from Database.redisdb import RedisDB
 
