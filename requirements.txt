@@ -1,4 +1,25 @@
+# Connection base de données  MongoDB
 pymongo
+# Connection base de persistance Redis
 redis
+# Cryptage et hachage
 bcrypt
+# Conversion en Pdf deppendances
 reportlab
+#Documentation installation dependencies
+# Dépendances principales
+mkdocs>=1.5.0
+mkdocs-material>=9.5.0
+
+# Extensions pour la documentation
+pymdown-extensions>=10.0
+mkdocstrings>=0.23.0
+mkdocstrings-python>=1.7.0
+
+# Plugins additionnels (optionnels mais recommandés)
+mkdocs-include-markdown-plugin>=6.0.0
+mkdocs-git-revision-date-localized-plugin>=1.2.0
+mkdocs-minify-plugin>=0.7.0
+
+# Pour la génération de diagrammes (optionnel)
+mkdocs-mermaid2-plugin>=1.1.0

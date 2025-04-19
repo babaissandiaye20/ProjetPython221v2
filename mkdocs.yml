@@ -1,0 +1,24 @@
+site_name: Votre Documentation
+docs_dir: docs  # Remplacez par le nom de votre dossier actuel
+
+nav:
+  - Accueil: index.md
+  - AdminConsole: AdminConsole.md
+  - AuthConsole: AuthConsole.md
+  - ClasseModels: Classe.md
+  -  ClasseRepository: ClasseRepository.md
+  - EnseignantConsole: EnseignantConsole.md
+  - ÉtudiantModels: Etudiant.md
+  - EtudiantConsole: EtudiantConsole.md
+  - EtudiantRepository: EtudiantRepository.md
+  - MongoDB: mongo.md
+  - Redis: redisdb.md
+  - UtilisateurModels: Utilisateur.md
+  - UtilisateurRepository: UtilisateurRepository.md
+
+theme:
+  name: material
+  language: fr
+
+plugins:
+  - search

@@ -1,0 +1,1215 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../AuthConsole/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>AdminConsole – Console dédiée aux administrateurs - Votre Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.2afb09e1.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#adminconsole-console-dediee-aux-administrateurs" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href=".." title="Votre Documentation" class="md-header__button md-logo" aria-label="Votre Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Votre Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              AdminConsole – Console dédiée aux administrateurs
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Votre Documentation" class="md-nav__button md-logo" aria-label="Votre Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Votre Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Welcome to MkDocs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    AdminConsole – Console dédiée aux administrateurs
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    AdminConsole – Console dédiée aux administrateurs
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#classe-adminconsole" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classe : AdminConsole
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Classe : AdminConsole">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#__init__self-utilisateur" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧱 __init__(self, utilisateur)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#afficher_menu_principalself" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 afficher_menu_principal(self)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gestion-des-etudiants" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎓 Gestion des étudiants
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎓 Gestion des étudiants">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#menu_gestion_etudiantsself" class="md-nav__link">
+    <span class="md-ellipsis">
+      📂 menu_gestion_etudiants(self)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creer_etudiantself" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➕ creer_etudiant(self)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creer_etudiant_avec_numeroself-tel" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔁 creer_etudiant_avec_numero(self, tel)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lister_etudiantsself" class="md-nav__link">
+    <span class="md-ellipsis">
+      📃 lister_etudiants(self)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rechercher_etudiantself" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 rechercher_etudiant(self)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ajouter_notesself" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 ajouter_notes(self)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modifier_etudiantself" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✏️ modifier_etudiant(self)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supprimer_etudiantself" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❌ supprimer_etudiant(self)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gestion-des-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏫 Gestion des classes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏫 Gestion des classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#menu_gestion_classesself" class="md-nav__link">
+    <span class="md-ellipsis">
+      📂 menu_gestion_classes(self)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classement_etudiantsself" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏆 classement_etudiants(self)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moyenne_par_classeself" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 moyenne_par_classe(self)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exportation-rapports" class="md-nav__link">
+    <span class="md-ellipsis">
+      📤 Exportation &amp; Rapports
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📤 Exportation &amp; Rapports">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#menu_exportationself" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 menu_exportation(self)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exporter_etudiants_csvself" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧾 exporter_etudiants_csv(self)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exporter_moyennes_jsonself" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧮 exporter_moyennes_json(self)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exporter_etudiants_pdfself" class="md-nav__link">
+    <span class="md-ellipsis">
+      📄 exporter_etudiants_pdf(self)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exporter_etudiants_jsonself" class="md-nav__link">
+    <span class="md-ellipsis">
+      📄 exporter_etudiants_json(self)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resume-de-lutilisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Résumé de l’utilisation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AuthConsole/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AuthConsole – Console de connexion et création de comptes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Classe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Classe – Représente une classe d’élèves (ex: Terminale S)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ClasseRepository/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ClasseRepository – Interface entre les objets Classe et la base de données
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EnseignantConsole/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EnseignantConsole – Interface dédiée aux enseignants
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Etudiant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Etudiant – Représente un élève avec ses informations et notes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EtudiantConsole/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EtudiantConsole – Interface dédiée à l'étudiant connecté
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EtudiantRepository/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EtudiantRepository – Gère les étudiants dans MongoDB + Redis
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Utilisateur/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Utilisateur – Représente un compte utilisateur de la plateforme
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UtilisateurRepository/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    UtilisateurRepository – Gère l’enregistrement, l’authentification et la gestion des comptes utilisateurs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mongo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MongoDB – Singleton pour la base de données Mongo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../redisdb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    RedisDB – Singleton pour la gestion du cache avec Redis
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#classe-adminconsole" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classe : AdminConsole
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Classe : AdminConsole">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#__init__self-utilisateur" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧱 __init__(self, utilisateur)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#afficher_menu_principalself" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 afficher_menu_principal(self)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gestion-des-etudiants" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎓 Gestion des étudiants
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎓 Gestion des étudiants">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#menu_gestion_etudiantsself" class="md-nav__link">
+    <span class="md-ellipsis">
+      📂 menu_gestion_etudiants(self)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creer_etudiantself" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➕ creer_etudiant(self)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creer_etudiant_avec_numeroself-tel" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔁 creer_etudiant_avec_numero(self, tel)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lister_etudiantsself" class="md-nav__link">
+    <span class="md-ellipsis">
+      📃 lister_etudiants(self)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rechercher_etudiantself" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 rechercher_etudiant(self)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ajouter_notesself" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 ajouter_notes(self)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modifier_etudiantself" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✏️ modifier_etudiant(self)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supprimer_etudiantself" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❌ supprimer_etudiant(self)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gestion-des-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏫 Gestion des classes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏫 Gestion des classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#menu_gestion_classesself" class="md-nav__link">
+    <span class="md-ellipsis">
+      📂 menu_gestion_classes(self)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classement_etudiantsself" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏆 classement_etudiants(self)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moyenne_par_classeself" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 moyenne_par_classe(self)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exportation-rapports" class="md-nav__link">
+    <span class="md-ellipsis">
+      📤 Exportation &amp; Rapports
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📤 Exportation &amp; Rapports">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#menu_exportationself" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 menu_exportation(self)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exporter_etudiants_csvself" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧾 exporter_etudiants_csv(self)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exporter_moyennes_jsonself" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧮 exporter_moyennes_json(self)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exporter_etudiants_pdfself" class="md-nav__link">
+    <span class="md-ellipsis">
+      📄 exporter_etudiants_pdf(self)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exporter_etudiants_jsonself" class="md-nav__link">
+    <span class="md-ellipsis">
+      📄 exporter_etudiants_json(self)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resume-de-lutilisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Résumé de l’utilisation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="adminconsole-console-dediee-aux-administrateurs">AdminConsole – Console dédiée aux administrateurs</h1>
+<p>Cette interface permet à l’admin de gérer :
+- les étudiants (CRUD + notes),
+- les classes (CRUD + matières),
+- les statistiques,
+- les exportations (CSV, JSON, PDF).</p>
+<hr />
+<h2 id="classe-adminconsole">Classe : AdminConsole</h2>
+<h3 id="__init__self-utilisateur">🧱 <code>__init__(self, utilisateur)</code></h3>
+<ul>
+<li><strong>But</strong> : Instancie la console admin avec :</li>
+<li>l’utilisateur connecté,</li>
+<li>accès aux repositories : <code>Utilisateur</code>, <code>Etudiant</code>, <code>Classe</code>.</li>
+</ul>
+<hr />
+<h2 id="afficher_menu_principalself">📋 <code>afficher_menu_principal(self)</code></h2>
+<ul>
+<li><strong>But</strong> : Menu principal de l’admin.</li>
+<li><strong>Options</strong> :</li>
+<li>Gestion des étudiants</li>
+<li>Gestion des classes</li>
+<li>Classement des étudiants</li>
+<li>Moyennes par classe</li>
+<li>Exportation &amp; Rapports</li>
+<li>Déconnexion</li>
+</ul>
+<hr />
+<h2 id="gestion-des-etudiants">🎓 Gestion des étudiants</h2>
+<h3 id="menu_gestion_etudiantsself">📂 <code>menu_gestion_etudiants(self)</code></h3>
+<ul>
+<li>Affiche un sous-menu pour :</li>
+<li>créer, rechercher, modifier, supprimer,</li>
+<li>ajouter des notes.</li>
+</ul>
+<hr />
+<h3 id="creer_etudiantself">➕ <code>creer_etudiant(self)</code></h3>
+<ul>
+<li>Lance <code>creer_etudiant_avec_numero()</code> après avoir saisi un téléphone.</li>
+</ul>
+<h3 id="creer_etudiant_avec_numeroself-tel">🔁 <code>creer_etudiant_avec_numero(self, tel)</code></h3>
+<ul>
+<li><strong>Logique</strong> :</li>
+<li>Vérifie si étudiant existe déjà.</li>
+<li>Si utilisateur existe et est <code>etudiant</code> → convertit.</li>
+<li>Sinon : saisie manuelle complète.</li>
+<li>Permet aussi d’ajouter des notes si une classe est affectée.</li>
+</ul>
+<hr />
+<h3 id="lister_etudiantsself">📃 <code>lister_etudiants(self)</code></h3>
+<ul>
+<li>Affiche un tableau avec :</li>
+<li>nom, prénom, téléphone, classe, moyenne.</li>
+</ul>
+<hr />
+<h3 id="rechercher_etudiantself">🔍 <code>rechercher_etudiant(self)</code></h3>
+<ul>
+<li>Recherche un étudiant :</li>
+<li>par nom, prénom, téléphone ou classe.</li>
+<li>Si pas trouvé par téléphone : propose de le créer.</li>
+</ul>
+<hr />
+<h3 id="ajouter_notesself">📝 <code>ajouter_notes(self)</code></h3>
+<ul>
+<li>Permet à l’admin d’ajouter/modifier des notes pour un étudiant.</li>
+<li>Si pas de classe : peut lui affecter une.</li>
+<li>Demande les notes selon les matières définies dans la classe.</li>
+</ul>
+<hr />
+<h3 id="modifier_etudiantself">✏️ <code>modifier_etudiant(self)</code></h3>
+<ul>
+<li>Mise à jour des infos personnelles d’un étudiant.</li>
+</ul>
+<hr />
+<h3 id="supprimer_etudiantself">❌ <code>supprimer_etudiant(self)</code></h3>
+<ul>
+<li>Supprime un étudiant après confirmation.</li>
+</ul>
+<hr />
+<h2 id="gestion-des-classes">🏫 Gestion des classes</h2>
+<h3 id="menu_gestion_classesself">📂 <code>menu_gestion_classes(self)</code></h3>
+<ul>
+<li>Menu similaire à celui des étudiants (ajout, édition, suppression...).</li>
+</ul>
+<blockquote>
+<p><em>Les méthodes internes ne sont pas montrées ici mais suivent la même logique CRUD + cache.</em></p>
+</blockquote>
+<hr />
+<h2 id="classement_etudiantsself">🏆 <code>classement_etudiants(self)</code></h2>
+<ul>
+<li>Affiche le <strong>classement par moyenne</strong> :</li>
+<li>global ou par classe.</li>
+<li>possibilité de chercher un étudiant spécifique.</li>
+</ul>
+<hr />
+<h2 id="moyenne_par_classeself">📊 <code>moyenne_par_classe(self)</code></h2>
+<ul>
+<li>Liste chaque classe avec sa <strong>moyenne générale calculée</strong>.</li>
+</ul>
+<hr />
+<h2 id="exportation-rapports">📤 Exportation &amp; Rapports</h2>
+<h3 id="menu_exportationself">📦 <code>menu_exportation(self)</code></h3>
+<ul>
+<li>Menu d'export : CSV, JSON, PDF.</li>
+</ul>
+<hr />
+<h3 id="exporter_etudiants_csvself">🧾 <code>exporter_etudiants_csv(self)</code></h3>
+<ul>
+<li>Export en <code>.csv</code> des étudiants avec :</li>
+<li>infos personnelles, moyenne, notes.</li>
+</ul>
+<hr />
+<h3 id="exporter_moyennes_jsonself">🧮 <code>exporter_moyennes_json(self)</code></h3>
+<ul>
+<li>Fichier <code>.json</code> contenant :</li>
+<li>chaque classe + moyenne globale.</li>
+</ul>
+<hr />
+<h3 id="exporter_etudiants_pdfself">📄 <code>exporter_etudiants_pdf(self)</code></h3>
+<ul>
+<li>Génère un fichier PDF formaté A4 :</li>
+<li>liste des étudiants, leurs infos, leurs notes.</li>
+</ul>
+<hr />
+<h3 id="exporter_etudiants_jsonself">📄 <code>exporter_etudiants_json(self)</code></h3>
+<ul>
+<li>Export JSON complet de chaque étudiant :</li>
+<li>nom, prénom, contact, classe, moyenne, notes.</li>
+</ul>
+<hr />
+<h2 id="resume-de-lutilisation">Résumé de l’utilisation</h2>
+<ul>
+<li><code>AdminConsole</code> est le <strong>panneau de gestion total</strong>.</li>
+<li>Utilise tous les repositories du système.</li>
+<li>Chaque modification de données <strong>efface les caches</strong>.</li>
+<li>Permet de gérer <strong>les données, les exports, et les performances</strong> du système.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
